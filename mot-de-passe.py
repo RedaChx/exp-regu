@@ -48,6 +48,24 @@ def validate():
     else:
         L5 = tkinter.Label(text="Invalide info", bg="purple", fg="red")
         L5.place(x=180, y=220)
+    if re.search(name, Z1.get()):
+        L6 = tkinter.Label(text="", bg="purple", fg="red")
+        L6.place(x=380,y=30)
+    else:
+        L7 = tkinter.Label(text="Invalide name", bg="purple", fg="red")
+        L7.place(x=380,y=30)
+    if re.search(number, Z2.get()):
+        L8 = tkinter.Label(text="", bg="purple", fg="red")
+        L8.place(x=380,y=75)
+    else:
+        L9 = tkinter.Label(text="Invalide Number", bg="purple", fg="red")
+        L9.place(x=380,y=75)
+    if re.search(email, Z3.get()):
+        L10 = tkinter.Label(text="", bg="purple", fg="red")
+        L10.place(x=380,y=120)
+    else:
+        L11 = tkinter.Label(text="Invalide Email", bg="purple", fg="red")
+        L11.place(x=380,y=120)
 
 """
 def validate():
