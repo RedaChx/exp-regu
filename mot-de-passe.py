@@ -23,21 +23,6 @@ def clear():
     Z1.delete(0,tkinter.END)
     Z2.delete(0,tkinter.END)
     Z3.delete(0,tkinter.END)
-"""
-def validate():
-    nom="^[A-Z]{1}[a-z]{2,9}$"
-    tel="^(06|07)[0-9]{8}$"
-    email="^[a-zA-z]+[a-zA-z0-9_.-]+@[A-Za-z0-9_.-]+[a-z]+\.[a-z]{3}$"
-    if re.search(Z1.get(),nom):
-        print("Valide Name")
-        if re.search(Z2.get(),tel):
-            print("Valide Number")
-            if re.search(Z3.get(),email):
-                print("Valide Email")
-    else:
-        L5 = tkinter.Label(text="Invalide info",bg="purple",fg="red")
-        L5.place(x=180,y=220)
-"""
 def validate():
     name = "^[A-Z][a-z]{2,9}$"
     number = "^(06|07)[0-9]{8}$"
@@ -49,23 +34,23 @@ def validate():
         L5 = tkinter.Label(text="Invalide info", bg="purple", fg="red")
         L5.place(x=180, y=220)
     if re.search(name, Z1.get()):
-        L6 = tkinter.Label(text="", bg="purple", fg="red")
-        L6.place(x=380,y=30)
+        l1 = tkinter.Label(text="Valide name", bg="purple", fg="green")
+        l1.place(x=380,y=30)
     else:
-        L7 = tkinter.Label(text="Invalide name", bg="purple", fg="red")
-        L7.place(x=380,y=30)
+        l2 = tkinter.Label(text="Invalide name", bg="purple", fg="red")
+        l2.place(x=380,y=30)
     if re.search(number, Z2.get()):
-        L8 = tkinter.Label(text="", bg="purple", fg="red")
-        L8.place(x=380,y=75)
+        l3 = tkinter.Label(text="Valide Number", bg="purple", fg="green")
+        l3.place(x=380,y=75)
     else:
-        L9 = tkinter.Label(text="Invalide Number", bg="purple", fg="red")
-        L9.place(x=380,y=75)
+        l4 = tkinter.Label(text="Invalide Number", bg="purple", fg="red")
+        l4.place(x=380,y=75)
     if re.search(email, Z3.get()):
-        L10 = tkinter.Label(text="", bg="purple", fg="red")
-        L10.place(x=380,y=120)
+        l5 = tkinter.Label(text="Valide Email", bg="purple", fg="green")
+        l5.place(x=380,y=120)
     else:
-        L11 = tkinter.Label(text="Invalide Email", bg="purple", fg="red")
-        L11.place(x=380,y=120)
+        l6 = tkinter.Label(text="Invalide Email", bg="purple", fg="red")
+        l6.place(x=380,y=120)
 
 """
 def validate():
