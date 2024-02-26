@@ -33,7 +33,9 @@ def validate():
     if re.search(name, a) and re.search(number, b) and re.search(email, c):
         L4 = tkinter.Label(text="Valid info", bg="purple", fg="green")
         L4.place(x=180, y=220)
+        """
         window.destroy()
+        """
         new = tkinter.Tk()
         new.geometry("300x300")
         new.title("Infos")
@@ -43,6 +45,9 @@ def validate():
         label1.pack()
         label2 = tkinter.Label(new , text="Votre Email est :"+" "+c , bg="gray")
         label2.place(x=10,y=50)
+        label3 = tkinter.Label(new , text="Votre Telephone est :"+" "+b , bg="gray")
+        label3.place(x=10,y=80)
+
         new.mainloop()
     else:
         L5 = tkinter.Label(text="Invalid info", bg="purple", fg="red")
