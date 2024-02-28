@@ -26,7 +26,7 @@ var3=tkinter.IntVar()
 check3=tkinter.Checkbutton(win1 , text="PHP ", variable=var3 , bg="gray" )
 check3.place(x=75,y=110)
 
-but1 = tkinter.Button(text="Valider" , command=fct2 , bg="gray" , relief="flat")
+but1 = tkinter.Button(text="Valider" , command=fct2 , bg="gray")
 but1.place(x=75,y=160)
 
 win1.mainloop()
