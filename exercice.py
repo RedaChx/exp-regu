@@ -65,6 +65,7 @@ def reset():
     win.config(bg="purple")
     check1.config(bg="purple")
     Afficher()
+    win.destroy()
 
 but1 = tkinter.Button(win, text="Quitter", command=reset)
 but1.place(x=230, y=30)
